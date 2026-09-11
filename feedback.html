@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Feedback Hub | Feedback</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <span class="top-bar-item">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          Arni Road, Wadgaon, Yavatmal
+        </span>
+        <span class="top-bar-item">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          info@sysslan.com
+        </span>
+        <span class="top-bar-item">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+          Mon – Fri: 9:00 AM – 6:00 PM
+        </span>
+      </div>
+      <div class="top-bar-right">
+        <a href="#" class="social-link" aria-label="Facebook">f</a>
+        <a href="#" class="social-link" aria-label="Twitter">t</a>
+        <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+        <a href="#" class="social-link" aria-label="Instagram">ig</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">⚙</div>
+          <div class="logo-text">
+            <span class="logo-name">Event Feedback Hub</span>
+            <span class="logo-tagline">Collect · Manage · Improve</span>
+          </div>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="feedback.html" class="active">Feedback</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span>Feedback</span>
+        </nav>
+        <h1>Submit Feedback</h1>
+        <p>Tell us about your event experience. Your feedback helps organizers improve future events for everyone.</p>
+      </div>
+    </section>
+
+    <!-- Feedback Form -->
+    <section class="feedback-section">
+      <div class="container feedback-layout">
+        <div class="feedback-info">
+          <span class="section-label">Share Your Voice</span>
+          <h2 class="section-title">We value your opinion</h2>
+          <p>
+            Your feedback is essential for improving event quality. Please take a
+            moment to rate your experience and share any suggestions you have.
+          </p>
+          <div class="info-cards">
+            <div class="info-card">
+              <div class="info-card-icon">📝</div>
+              <div>
+                <h4>Quick & Easy</h4>
+                <p>Fill out the form in under 2 minutes.</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-card-icon">🔒</div>
+              <div>
+                <h4>Secure & Private</h4>
+                <p>Your responses are stored safely and reviewed by organizers.</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-card-icon">💡</div>
+              <div>
+                <h4>Make an Impact</h4>
+                <p>Your insights directly shape future event planning.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-card">
+          <h2>Feedback Form</h2>
+          <p class="form-subtitle">All fields marked with the form are required.</p>
+
+          <form class="feedback-form" action="#" method="post">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your full name"
+                  required
+                >
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email address"
+                  required
+                >
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="event">Select Event</label>
+              <select id="event" name="event" required>
+                <option value="">-- Choose an event --</option>
+                <option value="tech-innovation-summit">Tech Innovation Summit 2026</option>
+                <option value="web-dev-bootcamp">Web Development Bootcamp</option>
+                <option value="community-hackathon">Community Hackathon</option>
+                <option value="career-networking-fair">Career & Networking Fair</option>
+                <option value="data-science-workshop">Data Science Workshop</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="rating">Overall Rating</label>
+              <select id="rating" name="rating" required>
+                <option value="">-- Select a rating --</option>
+                <option value="5">5 - Excellent</option>
+                <option value="4">4 - Good</option>
+                <option value="3">3 - Average</option>
+                <option value="2">2 - Below Average</option>
+                <option value="1">1 - Poor</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="comments">Comments</label>
+              <textarea
+                id="comments"
+                name="comments"
+                rows="5"
+                placeholder="Share your thoughts about the event..."
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-group checkbox-group">
+              <label>
+                <input type="checkbox" name="recommend" value="yes">
+                I would recommend this event to others
+              </label>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-navy">Submit Feedback →</button>
+              <button type="reset" class="btn btn-white" style="border:1px solid #e2e8f0;">Clear Form</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo-name">Event Feedback Hub</span>
+          <p>A full-stack platform for collecting, managing, and reviewing event feedback from attendees.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Hours</h4>
+          <ul>
+            <li>Mon – Fri: 9 AM – 6 PM</li>
+            <li>Sat: 10 AM – 4 PM</li>
+            <li>Sun: Closed</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Event Feedback Hub. All rights reserved.</span>
+        <div class="footer-social">
+          <a href="#" class="social-link">f</a>
+          <a href="#" class="social-link">t</a>
+          <a href="#" class="social-link">in</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
